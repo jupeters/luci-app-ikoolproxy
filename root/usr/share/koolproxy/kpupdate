@@ -111,9 +111,9 @@ update_rss_rules() {
 	
 update_rules() {
 	echo $(date "+%F %T"): ------------------- 内置规则更新 ------------------- >>$LOGFILE
-	wget 'https://cdn.jsdelivr.net/gh/ilxp/koolproxy@main/rules/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
-	wget 'https://cdn.jsdelivr.net/gh/ilxp/koolproxy@main/rules/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
-	wget 'https://cdn.jsdelivr.net/gh/ilxp/koolproxy@main/rules/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
+	wget 'https://raw.githubusercontent.com/jupeters/kp-rule/master/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
+	wget 'https://raw.githubusercontent.com/jupeters/kp-rule/master/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
+	wget 'https://raw.githubusercontent.com/jupeters/kp-rule/master/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
 	wget 'https://cdn.jsdelivr.net/gh/ilxp/koolproxy@main/rules/yhosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
 	wget 'https://cdn.jsdelivr.net/gh/ilxp/koolproxy@main/rules/steven.txt' -q -O $KP_DIR/data/rules/steven.txt
 	wget 'https://cdn.jsdelivr.net/gh/ilxp/koolproxy@main/rules/adg.txt' -q -O $KP_DIR/data/rules/adg.txt
